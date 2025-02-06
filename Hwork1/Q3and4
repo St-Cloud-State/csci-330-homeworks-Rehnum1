@@ -1,0 +1,42 @@
+Script started on 2025-01-27 05:09:21+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="122" LINES="8"]
+[0;32m@Rehnum1 [0m➜ [1;34m/workspaces/csci-330-homeworks-Rehnum1/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ;; Test for (a b x d)
+(car (cdr (cdr '(a b x d))))
+
+;; Test for (a (b (x d)))
+(car (cdr (car (cdr '(
+X
+* a (b (x d)))))))
+
+;; Test for (((a (b (x) d))))
+(c
+(X D)
+* ar (car (car (cdr (car (cdr (car '(((a (b (x) d)))))))))))
+
+NIL
+* 
+;; Construct (a b x d)
+(cons 'a (cons 'b (cons 'x (cons 'd '()))))
+
+;; Construct (a (b (x d)))
+(cons
+(A B X D)
+*  'a (cons (cons 'b (cons (cons 'x (cons 'd '())) '())) '()))
+
+;; Construct (((a (b (x) d))))
+(cons (
+(A (B (X D)))
+* cons (cons 'a (cons (cons 'b (cons (cons 'x '()) (cons 'd '()))) '())) '()) '())
+
+(((A (B (X) D))))
+* [0;32m@Rehnum1 [0m➜ [1;34m/workspaces/csci-330-homeworks-Rehnum1/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-01-27 05:13:46+00:00 [COMMAND_EXIT_CODE="0"]
