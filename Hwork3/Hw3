@@ -1,0 +1,32 @@
+Script started on 2025-02-19 04:04:18+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="122" LINES="16"]
+[0;32m@Rehnum1 [0m➜ [1;34m/workspaces/csci-330-homeworks-Rehnum1/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ g++ -o Q1 Q1.cpp
+[0;32m@Rehnum1 [0m➜ [1;34m/workspaces/csci-330-homeworks-Rehnum1/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./Q1
+Unsorted array: 10 7 8 9 1 5 
+Sorted array: 1 5 7 8 9 10 
+[0;32m@Rehnum1 [0m➜ [1;34m/workspaces/csci-330-homeworks-Rehnum1/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load : "Q2.lisp")
+
+(1 1 2 3 3 4 5 5 5 6 9) 
+T
+* (load "Q3.lisp")
+
+(1 1 2 3 4 5 6 7 7 8 9) 
+T
+* lo  (load "Q4.lisp")
+WARNING: redefining COMMON-LISP-USER::INSERT in DEFUN
+WARNING: redefining COMMON-LISP-USER::INSERTION-SORT in DEFUN
+
+(1 1 2 3 3 4 5 5 5 6 9) 
+T
+* (exit)
+[0;32m@Rehnum1 [0m➜ [1;34m/workspaces/csci-330-homeworks-Rehnum1/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-19 04:06:11+00:00 [COMMAND_EXIT_CODE="0"]
